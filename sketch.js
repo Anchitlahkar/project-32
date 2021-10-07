@@ -97,8 +97,11 @@ function setup(){
 }
 
 function draw(){
-    if(bgImg)
-    background(bgImg);
+    if(bgImg){
+        background(bgImg);
+    }else{
+        backgroundColor('black')
+    }
     Engine.update(engine);
     
     
